@@ -1,0 +1,1 @@
+# shopping-storage-manager
