@@ -43,18 +43,6 @@ public class Produto {
         return validade.isBefore(LocalDate.now());
     }
 
-    public boolean estaVencido2(Data dataValidade) {
-        if(dataValidade.getAno() < LocalDate.now().withYear(2023).getYear()) {
-            return true;
-        }
-
-        if(dataValidade.getMes() < LocalDate.now().withMonth(10).getMonthValue()) {
-            return true;
-        }
-
-        return dataValidade.getDia() < LocalDate.now().withDayOfMonth(20).getDayOfMonth();
-    }
-
     @Override
     public String toString() {
         return "{" +

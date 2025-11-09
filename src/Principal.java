@@ -66,7 +66,7 @@ public class Principal {
         System.out.println("Criar Produto selecionado.");
         String nomeProduto = Teclado.leString("Digite o nome do produto: ");
         double precoProduto = Teclado.leDouble("Digite o preço do produto: ");
-        String dataValidade = Teclado.leString("Digite a data de fundação da loja: (dd/mm/aaaa) ");
+        String dataValidade = Teclado.leString("Digite a data de validade do produto: (dd/mm/aaaa) ");
 
         String[] dataQuebrada = dataValidade.split("/");
         Data data = new Data(
